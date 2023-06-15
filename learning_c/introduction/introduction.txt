@@ -1,0 +1,115 @@
+Comment in C
+    single line //
+    multi line /**/
+Variable in C
+    int x = 100; // declaring and assigning a value to a variable
+    printf("value of x is %d", x);
+Datatype in C
+    Primitive DataType
+        Boolean(true or false)
+        Character(single character)
+        Integer(whole number)
+        Float(real number)
+        Double(long real number)
+        Void(non)
+
+    Derived DataType
+        Array
+        Pointer
+        References
+
+    User Defined type
+        Structure
+        Union
+        Enum
+
+Type Convertion
+
+    Implicit
+        int num = 5 + 32.564;
+        printf("The value is %d", num);
+
+    Explicit
+        float a = 34.24;
+        int b = (int) a;
+        printf("The value is %d", b);
+
+Input and Output In C
+    scanf() and printf() for input and output of any datatype
+
+        int a;
+        printf("Enter a number\n");
+        scanf("%d", &a);
+        printf("The value of a is %d", a);
+
+    gets() and puts() for input and output string data
+    getchar() and putchar() for input and output of character data
+
+C Control Statement
+    Conditional statement
+        If statement
+            Syntax
+                if(condition)
+                {
+                    statement...;
+                    statement...;
+                }
+
+        If else statement
+            Syntax
+                if(condition)
+                {
+                    statement...;
+                }else
+                {
+                    statement...;
+                }
+
+    Loops
+        For loop
+            Syntax
+                for(i = 0; i < n; i++){
+                    //do something
+                }
+
+        While loop
+            Syntax
+                while(condition0){
+                    //do something
+                }
+
+        Switch case
+            Syntax
+                int n = 1;
+
+                switch(n){
+                    case 1:
+                        statement...;
+                        break;
+                    case 2:
+                        statement...;
+                        break;
+                    case 3:
+                        statement...;
+                        break;
+                    default:
+                        statement...;
+                }
+
+Arrays in C
+    int a[10]; // single dimensional
+    int b[3][3]; // multi dimensional
+
+Functions in C
+    int sum(int a, int b)
+    {
+            return a+b;
+    }
+
+    void main()
+    {
+        printf("%d",sum(5,10));
+    }
+
+String in C
+
