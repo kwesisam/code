@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1693519605 source:c:\users\skm\work station\code_c\learning_c\hello_c\main.c
+	<stdio.h>
+	<stdlib.h>
+

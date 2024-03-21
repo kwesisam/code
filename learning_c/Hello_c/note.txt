@@ -1,0 +1,134 @@
+// STRING IN C
+        // declaring a string note: we don't a data type of string In C
+            char name[10] = "Samuel";
+            printf(name); // printing just name
+            printf("\nHello %s", name); // print hello name
+
+
+        // assigning values to string variable note: use strcpy(variable_name,"value"); to assign a value to a string
+            // name = "Emma" will cause an error
+            strcpy(name, "Emma");
+            printf("\nHello %s ", name); // will not cause an error
+//Reading data supplied by user
+        // adding two user input numbers
+        /*int a, b; // declaring the two variable
+        //prompt
+        printf("Enter the first number: ");
+        scanf("%d", &a); // receiving input
+
+        //prompt
+        printf("\nEnter the second number: ");
+        scanf("%d", &b);
+
+        int sum; // declaring the sum variable to hold the sum of the two variable a and b
+        sum = a + b;
+
+        //printing the result
+        printf("\nThe result of the adding %d and %d is %d", a, b, sum);*/
+
+        //-- reading string input
+        /*char firstName[20]; // declaring a variable to store first name of the user
+        //prompt
+        printf("Enter your first name ");
+        gets(firstName);// receiving input from the user
+
+        //outputting the result
+        printf("\nYour first name is %s", firstName);*/
+
+
+    //-Examples
+        //-- Problem 1 Average
+            /*A program to request three integer and print their average to one decimal*/
+
+            /*//solution
+                int a, b, c; // declaring three integer variables
+                double average; // declaring the average variable to store the average of the three number;
+
+                //prompt
+                printf("Enter three integer: \n");
+                //receiving input from the users
+                scanf("%d%d%d", &a, &b, &c);
+                // performing the computation
+                average = (a + b + c) / 3.0;
+
+                //outputting the results
+                printf("\nThe average of %d %d %d is %.1lf", a, b, c, average );*/
+
+        //--Problem 2 -Square
+            /*Write a program to request a whole number and print the number ant its square*/
+
+                /*//solution
+                    int a; // declaring a variable to store user input
+
+                    //prompt
+                    printf("Enter a whole number: ");
+                    // receiving user input
+                    scanf("%d",&a);
+                    // outputting the result
+                    printf("The number %d and its square %d", a, a*a);*/
+
+        ///--Problem 3 -Banking
+            /*Write a program to read the data for the customer, calculate the interest and service charge,
+                and print the customer’s name, average balance, interest, and service charge.*/
+
+                /*///solution
+                //declaring variables
+                char name[20], accountNumber[20];
+                int numberOfTransaction;
+                double averageBalance;
+
+                double interestRate = 0.06;
+                double serviceChargeRate = 0.5;
+
+                // prompt and receiving user inputs
+                printf("What is your name?\n");
+                gets(name);
+                printf("\nWhat is your account number?\n");
+                gets(accountNumber);
+                printf("\nWhat is your average balance?\n");
+                scanf("%lf", &averageBalance);
+                 printf("\nWhat is your number of transaction made during the month?\n");
+                scanf("%d", &numberOfTransaction);
+                //printf("%d", numberOfTransaction);
+
+                //performing computation
+                double interest = averageBalance * interestRate;
+                double serviceCharges = numberOfTransaction * serviceChargeRate;
+
+                //printing the results
+                printf("%s\n%.2lf\n%.2lf\n%.2lf",name, averageBalance, interest, serviceCharges);*/
+
+        ///-Problem 4 - Ticket
+            /* At a football match, tickets are sold in three categories: reserved, stands, and grounds. For each of
+                these categories, you are given the ticket price and the number of tickets sold. Write a program to
+                prompt for these values and print the amount of money collected from each category of tickets.
+                Also print the total number of tickets sold and the total amount of money collected*/
+
+                /*///solution
+                //declaring variables
+                int reservedQty, standsQty, groundsQty;
+                double reservedPrice, standsPrice, groundsPrice;
+
+                double amountFromReserved, amountFromStands, amountFromGrounds;
+
+
+                //prompting and receiving user inputs
+                printf("Reserved ticket price and quantity sold -- ");
+                scanf("%lf%d", &reservedPrice, &reservedQty);
+                printf("\nStands ticket price and quantity sold -- ");
+                scanf("%lf%d", &standsPrice, &standsQty);
+                printf("\nGrounds ticket price and quantity sold -- ");
+                scanf("%lf%d", &groundsPrice, &groundsQty);
+
+                amountFromReserved = reservedPrice * reservedQty;
+                amountFromGrounds = groundsPrice * groundsQty;
+                amountFromStands = standsPrice * standsQty;
+
+                double totalSales = amountFromGrounds + amountFromReserved + amountFromStands;
+
+                printf("Reserved sales $%.2lf\n", amountFromReserved);
+                printf("Stands sales $%.2lf\n", amountFromStands);
+                printf("Grounds sales $%.2lf \n", amountFromGrounds);
+
+                printf("Total sales $%.2lf ", totalSales);*/
+
